@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    color: black;
+    width: 150px;
+}
+
+input[type=radio] {
+    display: none;
+}
+
+label {
+    color: black;
+    display: block;
+    width: 100%;
+    font-family: Roboto, 'Segoe UI', Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 10px 20px 10px 40px;
+    cursor: pointer;
+    position: relative;
+    border-bottom: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+}
+
+span.checkmark:after {
+    left: 15px;
+    top: 10px;
+    width: 7px;
+    height: 11px;
+    border: solid #0B8BBE;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input:checked ~ .checkmark:after {
+    display: block;
+}
